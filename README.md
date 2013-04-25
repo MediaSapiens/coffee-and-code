@@ -10,10 +10,18 @@ Build requirements:
 Install or update:
 ----------
 
-fab local_update
+  fab local_update
 
 Compile static:
 ----------
 
-fab local_compile
+  fab local_compile
+
+
+run server
+----------
+
+  python pages.py
+
+
 
