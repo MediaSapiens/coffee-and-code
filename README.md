@@ -1,4 +1,19 @@
-coffee-and-code
+Emty Project for frontend team
 ===============
 
-coffee-and-code
+Build requirements:
+-------------------
+
+* node.js
+* brunch.io
+
+Install or update:
+----------
+
+fab local_update
+
+Compile static:
+----------
+
+fab local_compile
+

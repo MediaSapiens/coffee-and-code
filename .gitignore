@@ -33,3 +33,17 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+#
+# macosx folder info
+.DS_Store
+# ignoring vim tmp buffer
+*.swp
+
+*.py[co]
+node_modules
+.idea
+*node_modules
+
+#
+static
