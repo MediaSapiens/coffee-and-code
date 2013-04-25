@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/', defaults={'page': 'index'})
 @app.route('/<page>')
-def flask_geekmeet(page=None):
+def pages(page=None):
     try:
         return render_template('%s.html' % page)
     except TemplateNotFound:
@@ -18,10 +18,5 @@ def flask_geekmeet(page=None):
 def page_not_found(e):
     return render_template('404.html'), 404
 
-@app.context_processor
-def inject_year():
-    return dict(c_year=strftime('%Y', gmtime()))
-
 if __name__ == '__main__':
-    app.debug = True
-    if (app.debug):app.run()
+    app.run()
