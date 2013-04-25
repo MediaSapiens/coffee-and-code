@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{% block content%}
+	<title>Coffee and Code</title>
+	{% endblock%}    
+    <link href="static/css/style.css" />
+</head>
+
+<body>
+{% block header%}
+<h1> coffee and code</h1>
+{% endblock%}
+
+{% block content%}
+<p> some content ...</p>
+{% endblock%}
+
+
+{% block footer%}
+<p>
+	Footer
+</p>
+{% endblock%}
+
+  <script src="static/js/script.js"></script>
+
+</body>
+</html>
